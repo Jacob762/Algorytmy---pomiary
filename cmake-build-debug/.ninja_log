@@ -1,0 +1,21 @@
+# ninja log v5
+7	106	7074080988492025	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/node.cpp.obj	2b967f2a04687e3
+2	494	7074350140008319	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Kruskal/Kruskal.cpp.obj	9b680b3606df705
+8	514	7074350140208325	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/BellmanFord/BF.cpp.obj	c78b8d7beae24ee6
+12	493	7074350140008319	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Dijkstra/Dijkstra.cpp.obj	cb82e73a2b5c5b0e
+38	354	7074080990952032	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Lista/listaElement.cpp.obj	de9dbe988a19bd93
+33	375	7074080991175003	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Slist/nList.cpp.obj	b948d08d2392e08b
+13	424	7074080991675000	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Graf.cpp.obj	63d5205f4a93d319
+19	424	7074080991675000	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Lista/lista.cpp.obj	5b32054d7ca17c0d
+3	554	7074219566615530	CMakeFiles/SDIZOPROJEKT2Testy.dir/main.cpp.obj	e66268397496f637
+2	308	7074161870133977	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Kopiec/kopiec.cpp.obj	add31e0184784adb
+514	657	7074350141618318	SDIZOPROJEKT2Testy.exe	9cec2aa52ea3dac3
+1	273	7074146200652503	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/ranGen.cpp.obj	b799bd491749d99c
+17	502	7074350140108307	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Prima/Prima.cpp.obj	bd9be6c92d24d6d
+8	398	7075254431218724	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Graf.cpp.obj	63d5205f4a93d319
+14	450	7075254431746963	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Kruskal/Kruskal.cpp.obj	9b680b3606df705
+27	489	7075254432135663	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/BellmanFord/BF.cpp.obj	c78b8d7beae24ee6
+33	513	7075254432364897	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Prima/Prima.cpp.obj	bd9be6c92d24d6d
+20	517	7075254432404764	CMakeFiles/SDIZOPROJEKT2Testy.dir/Struktury/Dijkstra/Dijkstra.cpp.obj	cb82e73a2b5c5b0e
+2	555	7075254432803430	CMakeFiles/SDIZOPROJEKT2Testy.dir/main.cpp.obj	e66268397496f637
+555	671	7075254433931859	SDIZOPROJEKT2Testy.exe	9cec2aa52ea3dac3
