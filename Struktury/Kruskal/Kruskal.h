@@ -38,6 +38,8 @@ public:
     void init_kolejkaL();
 
     void testy();
+
+    void init_kolejkaMI();
 };
 
 

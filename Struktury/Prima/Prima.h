@@ -35,6 +35,8 @@ namespace std {
         ranGen gen;
 
         void testy();
+
+        void zprimujMacierzI(int start);
     };
 
 } // std

@@ -11,8 +11,8 @@
 
 int main() {
     srand(time(NULL));
-    Prima pr = Prima();
-    Dijkstra dij = Dijkstra();
+    //Prima pr = Prima();
+    //Dijkstra dij = Dijkstra();
     Kruskal kru = Kruskal();
     BF bff = BF();
 

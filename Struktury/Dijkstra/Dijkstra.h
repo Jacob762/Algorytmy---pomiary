@@ -32,6 +32,8 @@ namespace std {
         void testy();
 
         void zdijkstrujListe(int start);
+
+        void zdijkstrujMacierzI(int start);
     };
 
 } // std

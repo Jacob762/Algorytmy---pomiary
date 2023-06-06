@@ -53,6 +53,53 @@ namespace std {
         delete [] poprzednicy;
     }
 
+    void Dijkstra::zdijkstrujMacierzI(int start){
+        bool dodaned[graf.rozmiar];
+        for(int i=0;i<graf.rozmiar;i++) dodaned[i] = false;
+        drogi = new int [graf.rozmiar];
+        odwiedzoned = new bool [graf.rozmiar];
+        poprzednicy = new int [graf.rozmiar];
+        que = kopiec();
+        int current;
+        for(int i=0;i<graf.rozmiar;i++){
+            if(i!=start){
+                drogi[i] = INT_MAX;
+                odwiedzoned[i] = false;
+                poprzednicy[i] = -1;
+            } else{
+                drogi[i] = 0;
+                odwiedzoned[i] = true;
+                poprzednicy[i] = -1;
+            }
+        }
+        que.dodaj(drogi[start],start,0);
+        while(que.rozmiar!=0){
+            current = que.table[0].id;
+            que.usunKorzen();
+            odwiedzoned[current] = true;
+            for(int i=0;i<graf.wierz;i++) {
+                if (graf.macInc[current][i]==1) {
+                    for(int j=0;j<graf.rozmiar;j++){
+                        if(graf.macInc[j][i]==-1){
+                            if(drogi[j] > drogi[current] + graf.wart[i] && !odwiedzoned[j]){
+                                poprzednicy[j] = current;
+                                drogi[j] = drogi[current] + graf.wart[i];
+                            }
+                            break;
+                        }
+                    }
+                }
+            }
+            for(int i=0;i<graf.rozmiar;i++){
+                if(drogi[i]!=INT_MAX&&!odwiedzoned[i]&& !dodaned[i]) que.dodaj(drogi[i],i,0);
+                dodaned[i] = true;
+            }
+        }
+        delete [] drogi;
+        delete [] odwiedzoned;
+        delete [] poprzednicy;
+    }
+
     void Dijkstra::zdijkstrujListe(int start){
         bool dodaned[graf.rozmiar];
         for(int i=0;i<graf.rozmiar;i++) dodaned[i] = false;
@@ -145,8 +192,9 @@ namespace std {
                     time_span = std::chrono::duration_cast<chrono::duration<double>>(t2 - t1);
                     sredniaL += std::chrono::duration<double>(time_span).count();
                     graf = Graf('m',"plik.txt");
+                    cout<<k<<" "<<j<<" "<<i<<endl;
                     t1 = chrono::high_resolution_clock::now();
-                    zdijkstrujMacierz(0);
+                    zdijkstrujMacierzI(0);
                     t2 = chrono::high_resolution_clock::now();
                     time_span = std::chrono::duration_cast<chrono::duration<double>>(t2 - t1);
                     srednia += std::chrono::duration<double>(time_span).count();

@@ -26,7 +26,7 @@ namespace std {
             return;
         }
         int x,y,z;
-        file<<nody<<" "<<krawedzie<<endl;
+        file<<nody<<" "<<nody*wyjscia<<endl;
         for(int i=0;i<nody;i++){
             x = i;
             tabOd[x] = true;

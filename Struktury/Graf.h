@@ -20,7 +20,8 @@ using namespace std;
         bool *S;
         int *koszt;
         int *poprzednik;
-        int rozmiar;
+        int rozmiar; // ilosc wierzcholkow
+        int wierz; // ilosc krawedzi tak naprawde
         int **grafMacierz;
         int **temp;
         lista *list;
@@ -30,18 +31,26 @@ using namespace std;
         Graf(char struktura, string nazwa);
         void init_macierz();
         void init_lista();
-        void dodajMacierz(string nazwa);
 
-        void dodajMacierzFord(string nazwa);
         void pokaz();
         void poszerzMacierz(int wielkosc);
         void sciezkaMacierz(int start);
 
+        int *wart;
+        int **macInc;
+
+        //Dijkstra
+        void dodajMacierz(string nazwa);
         void dodajLista(string nazwa);
+        void dodajMacierzI(string nazwa);
 
-        void dodajMacierzPrima(string nazwa);
+        //Ford (lista jest w klasie bf)
+        void dodajMacierzFord(string nazwa);
 
-        void dodajListaPrim(string nazwa);
+        //prim + kruskal
+        void dodajMacierzPrima(string nazwa); //macierz sasiedztwa
+        void dodajListaPrim(string nazwa); //lista
+        void dodajMacierzPrimaI(string nazwa); //macierz incydencji;
 
         void getLista();
     };
